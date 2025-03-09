@@ -1,7 +1,7 @@
 # Google Data Analytics Capstone: Cyclistic Case Study
 Course: [Google Data Analytics Capstone: Complete a Case Study](https://www.coursera.org/learn/google-data-analytics-capstone)
 ## Introduction
-In this case study, I will perform many real-world tasks of a junior data analyst at a fictional company, Cyclistic. In order to answer the key business questions, I will follow the steps of the data analysis process: [Ask](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/README.md#ask), [Prepare](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/README.md#prepare), [Process](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/README.md#process), [Analyze](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/README.md#analyze-and-share), [Share](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/README.md#analyze-and-share), and [Act](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study#act).
+In this case study, I will perform many real-world tasks of a junior data analyst at a fictional company, Cyclistic. In order to answer the key business questions, I will follow the steps of the data analysis process: [Ask](https://github.com/davaughnjr/Coursera_Google_Data_Analytics_Captone_Project/tree/main/README.md#ask), [Prepare](https://github.com/davaughnjr/Coursera_Google_Data_Analytics_Captone_Project/tree/main/README.md#prepare), [Process](https://github.com/davaughnjr/Coursera_Google_Data_Analytics_Captone_Project/tree/main/README.md#process), [Analyze](https://github.com/davaughnjr/Coursera_Google_Data_Analytics_Captone_Project/tree/main/README.md#analyze-and-share), [Share](https://github.com/davaughnjr/Coursera_Google_Data_Analytics_Captone_Project/tree/main/README.md#analyze-and-share), and [Act](https://github.com/davaughnjr/Coursera_Google_Data_Analytics_Captone_Project#act).
 ### Quick links:
 Data Source: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) [accessed on 04/03/23]  
   
@@ -73,35 +73,37 @@ Before cleaning the data, I am familiarizing myself with the data to find the in
 Observations:  
 1. All column names listed the year trip data, ride_id is the primary key that'll check in every table
  
-  ![image](https://github.com/user-attachments/assets/eabcaa45-5dd2-4ecb-aebc-ac71c1d4756a)
+![image](https://github.com/user-attachments/assets/eabcaa45-5dd2-4ecb-aebc-ac71c1d4756a)
 
 2. No null values listed
 
-  ![image](https://github.com/user-attachments/assets/599166d8-7d57-4601-812f-3482ef1e70d5)
+![image](https://github.com/user-attachments/assets/599166d8-7d57-4601-812f-3482ef1e70d5)
 
 3. Found 60 duplicate rows
 
-   ![image](https://github.com/user-attachments/assets/809f608d-838a-4acf-887d-3152e4ae7fb6)
+![image](https://github.com/user-attachments/assets/809f608d-838a-4acf-887d-3152e4ae7fb6)
 
 4. ride_id values have length less than 16
 
-  ![image](https://github.com/user-attachments/assets/2498867b-93db-4606-a3e4-de4cae551112)
+![image](https://github.com/user-attachments/assets/2498867b-93db-4606-a3e4-de4cae551112)
 
 5. Remove all ride_id that’s less than 16
 
-  ![image](https://github.com/user-attachments/assets/fd1be418-b52d-413a-8631-cabc7527e537)
+![image](https://github.com/user-attachments/assets/fd1be418-b52d-413a-8631-cabc7527e537)
 
 6. There are a total of 3 bikes listed under rideable_type
 
-  ![image](https://github.com/user-attachments/assets/c98671fd-558f-4004-a929-a55614cc5c76)
+![image](https://github.com/user-attachments/assets/c98671fd-558f-4004-a929-a55614cc5c76)
 
 7. Found 164 trips that has a duration longer than a day and 108,481 trips having less than a minute
 
-  ![image](https://github.com/user-attachments/assets/32c4d0d2-6e57-449a-b91f-8b2775c0f23e)
-  ![image](https://github.com/user-attachments/assets/7c0ec0b3-693e-4afa-8c56-f2d968b0cbf8)
+![image](https://github.com/user-attachments/assets/32c4d0d2-6e57-449a-b91f-8b2775c0f23e)
+
+![image](https://github.com/user-attachments/assets/7c0ec0b3-693e-4afa-8c56-f2d968b0cbf8)
 
 8. member_casual column is the subscription and has two unique values. Casual with 1,515,238 total trips and Member with 2,799,658 total trips
-   ![image](https://github.com/user-attachments/assets/22ef06e0-575f-4cd6-ba54-96afad008199)
+
+![image](https://github.com/user-attachments/assets/22ef06e0-575f-4cd6-ba54-96afad008199)
 
 ### Data Cleaning
 SQL Query: [Data Cleaning](https://github.com/davaughnjr/Coursera_Google_Data_Analytics_Captone_Project/blob/main/DataCleaning.sql)  
@@ -109,7 +111,7 @@ SQL Query: [Data Cleaning](https://github.com/davaughnjr/Coursera_Google_Data_An
 1. All rows with missing values were removed in Excel
 2. Added the requested columns ride_length, day_of_week and month were added
 
-  ![image](https://github.com/user-attachments/assets/e3a2a609-3f01-424a-b0d5-2830b9d7ba2b)
+![image](https://github.com/user-attachments/assets/e3a2a609-3f01-424a-b0d5-2830b9d7ba2b)
 
 3. Trips that was less and a minute and longer than a day are removed
   
